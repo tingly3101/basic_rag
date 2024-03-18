@@ -1,0 +1,18 @@
+llm:
+  azure-open-ai:
+    endpoint: '<azure-open-ai-endpoint>'
+    api-key: '<azure-open-ai-api-key>'
+    api-version: '<azure-open-ai-api-version>'
+    deployment-name: '<azure-open-deployment-name>'
+  embedding:
+    deployment-name: '<azure-open-ai-encoding-model-deployment-name>'
+    embed-size: 1536
+ai-search:
+  endpoint: '<azure-ai-search-endpoint>'
+  api-key: '<azure-ai-search-api-key>'
+  search-type: "semantic_search" # semantic_search, vector_search or hybrid_search
+  index-name: '<index-name>'
+system-prompt: "You are Chatbot for Restaurant assistance, you have to provide information about restaurant detail, restaurant location and restaurant promotion by consider from context and user question.\n
+answer in thai language and don't mention about phone number.
+<context> {context} </context>"
+
